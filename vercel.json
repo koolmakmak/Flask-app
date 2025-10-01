@@ -1,11 +1,5 @@
 {
-  "version": 2,
-  "functions": {
-    "AI/main.py": {
-      "runtime": "@vercel/python@3.10"
-    }
-  },
-  "routes": [
-    { "src": "/(.*)", "dest": "AI/main.py" }
-  ]
+    "rewrites": [
+        { "source": "/(.*)", "destination": "/" }
+    ]
 }
