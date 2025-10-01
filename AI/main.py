@@ -1,8 +1,8 @@
 from flask import Flask
 from flask_cors import CORS
-from plant import bp_plant
-from soil import bp_soil
-from sensor import bp_sensor
+from .plant import bp_plant
+from .soil import bp_soil
+from .sensor import bp_sensor
 
 app = Flask(__name__)
 CORS(app)
