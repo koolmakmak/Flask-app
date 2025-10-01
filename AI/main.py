@@ -7,6 +7,10 @@ from sensor import bp_sensor
 app = Flask(__name__)
 CORS(app)
 
+@app.route("/")
+def home():
+    return "Welcome to the GrowGarden AI API!"
+
 # Register blueprints
 app.register_blueprint(bp_plant, url_prefix="")
 app.register_blueprint(bp_soil, url_prefix="")
